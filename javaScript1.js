@@ -21,9 +21,9 @@ const checkWeather =async function(city){
         let hmdt=data.main.humidity;
         //if(a.includes(climate))
         if(arr.some(a=>a.toLowerCase()===climate.toLowerCase())){
-            document.querySelector("#climate").src=`../images/${climate}.png`;
+            document.querySelector("#climate").src=`images/${climate}.png`;
         }else{
-            document.querySelector("#climate").src="../images/haze.png";
+            document.querySelector("#climate").src="images/haze.png";
         }
         document.querySelector(".city").innerHTML=city;
         document.querySelector(".temp").innerHTML=temperature+"°C";
